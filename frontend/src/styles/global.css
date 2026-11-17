@@ -31,5 +31,19 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
 .btn.ghost { background: transparent; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
-.page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.page-foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #067647; }
+.tabs { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.tab { border: 1px solid var(--border); background: #fff; border-radius: 6px 6px 0 0; padding: 7px 14px; cursor: pointer; font-size: 13px; color: var(--muted); }
+.tab.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin: 12px 0; }
+.panel h3 { margin: 0 0 6px; font-size: 15px; }
+.form-grid { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: flex-end; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+.form-grid:last-child { border-bottom: none; }
+.form-grid .btn { margin-bottom: 2px; white-space: nowrap; }
+.form-grid .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.identity-bar { display: flex; gap: 10px; align-items: flex-end; }
+.identity-bar select, .form-grid select { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; min-width: 150px; }
+.merge-inputs { display: inline-flex; gap: 6px; }
+.merge-inputs input { width: 90px; }
